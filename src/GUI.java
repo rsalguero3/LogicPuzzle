@@ -1,12 +1,16 @@
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.SplitPane;
+import javafx.scene.control.TableView;
 import javafx.scene.effect.Bloom;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+import javax.swing.table.TableColumn;
 
+//Ricardo Salguero
 public class GUI extends Application {
 
 private GridPane pane;
@@ -18,24 +22,35 @@ private boolean[] gridAnswers = {false, true, false, false,
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("GridPane Experiment");
 
-
+        Label label = new Label("hi");
 
         GridModel gridPane1 = createGrid(gridAnswers);
         GridModel gridPane2 = createGrid(gridAnswers);
+        GridModel gridPane3 = createGrid(gridAnswers);
 
         HBox hBox = new HBox();
+        HBox textBox = new HBox();
+        VBox vBox = new VBox();
+        textBox.setSpacing(0);
+        textBox.setPadding(new Insets(5,5,5,5));
+        textBox.getChildren().addAll(label);
+
+        vBox.setSpacing(0);
+        vBox.setPadding(new Insets (50,5,0,10));
 
         hBox.setSpacing(0);
-        hBox.setPadding(new Insets(5,5,5,5));
+        hBox.setPadding(new Insets(5,5,0,0));
         hBox.getChildren().addAll(gridPane1,gridPane2);
 
+        vBox.getChildren().addAll(textBox, hBox, gridPane3);
 
-        Scene scene = new Scene(hBox, 1000, 1000);
+        Scene scene = new Scene(vBox, 1000, 1000);
         pane = gridPane1;
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
+    //Method will be called by one of the GridModels and will check if all 3 Grids are correct
     public boolean checkCorrectAnswers(GridModel gridPane){
         int i = 0;
         while(i < 16) {
@@ -50,6 +65,7 @@ private boolean[] gridAnswers = {false, true, false, false,
         return false;
     }
 
+    //Method will create 3 GridModels and add buttons with events
     public GridModel createGrid(boolean[] list){
         GridModel gridPane = new GridModel(list);
         for (int r = 0; r < 4; r++) {

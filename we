@@ -1,0 +1,1334 @@
+[33mcommit a8d58a3eec3999613bc62034731ece7d288ad238[m
+Author: Ricardo Salguero <rsalguero3@yahoo.com>
+Date:   Mon Feb 6 11:32:03 2017 -0500
+
+    Adding existing files
+
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0548357[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">[m
+[32m+[m[32m    <output url="file://$PROJECT_DIR$/out" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/modules.xml b/.idea/modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aeae71e[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/modules.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectModuleManager">[m
+[32m+[m[32m    <modules>[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/LogicPuzzle.iml" filepath="$PROJECT_DIR$/LogicPuzzle.iml" />[m
+[32m+[m[32m    </modules>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e96534f[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/uiDesigner.xml[m
+[36m@@ -0,0 +1,124 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="Palette2">[m
+[32m+[m[32m    <group name="Swing">[m
+[32m+[m[32m      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />[m
+[32m+[m[32m        <initial-values>[m
+[32m+[m[32m          <property name="text" value="Button" />[m
+[32m+[m[32m        </initial-values>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />[m
+[32m+[m[32m        <initial-values>[m
+[32m+[m[32m          <property name="text" value="RadioButton" />[m
+[32m+[m[32m        </initial-values>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />[m
+[32m+[m[32m        <initial-values>[m
+[32m+[m[32m          <property name="text" value="CheckBox" />[m
+[32m+[m[32m        </initial-values>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />[m
+[32m+[m[32m        <initial-values>[m
+[32m+[m[32m          <property name="text" value="Label" />[m
+[32m+[m[32m        </initial-values>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">[m
+[32m+[m[32m          <preferred-size width="150" height="-1" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">[m
+[32m+[m[32m          <preferred-size width="150" height="-1" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">[m
+[32m+[m[32m          <preferred-size width="150" height="-1" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="150" height="50" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="200" height="200" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">[m
+[32m+[m[32m          <preferred-size width="200" height="200" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">[m
+[32m+[m[32m          <preferred-size width="-1" height="20" />[m
+[32m+[m[32m        </default-constraints>[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">[m
+[32m+[m[32m        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />[m
+[32m+[m[32m      </item>[m
+[32m+[m[32m    </group>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b0f0b3a[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -0,0 +1,942 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ChangeListManager">[m
+[32m+[m[32m    <list default="true" id="58828481-f545-4a0a-951f-43cfd385d8dd" name="Default" comment="" />[m
+[32m+[m[32m    <ignored path="$PROJECT_DIR$/out/" />[m
+[32m+[m[32m    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m
+[32m+[m[32m    <option name="TRACKING_ENABLED" value="true" />[m
+[32m+[m[32m    <option name="SHOW_DIALOG" value="false" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_CONFLICTS" value="true" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />[m
+[32m+[m[32m    <option name="LAST_RESOLUTION" value="IGNORE" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="CreatePatchCommitExecutor">[m
+[32m+[m[32m    <option name="PATCH_PATH" value="" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />[m
+[32m+[m[32m  <component name="FileEditorManager">[m
+[32m+[m[32m    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">[m
+[32m+[m[32m      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="324">[m
+[32m+[m[32m              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="imports" expanded="true" />[m
+[32m+[m[32m              </folding>[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="GridModel.java" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="432">[m
+[32m+[m[32m              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="GridButton.java" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="216">[m
+[32m+[m[32m              <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="imports" expanded="true" />[m
+[32m+[m[32m              </folding>[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m    </leaf>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="FileTemplateManagerImpl">[m
+[32m+[m[32m    <option name="RECENT_TEMPLATES">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="Class" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="GradleLocalSettings">[m
+[32m+[m[32m    <option name="externalProjectsViewState">[m
+[32m+[m[32m      <projects_view />[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="IdeDocumentHistory">[m
+[32m+[m[32m    <option name="CHANGED_PATHS">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/Main.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/GridModel.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/GridButton.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/GUI.java" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />[m
+[32m+[m[32m  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />[m
+[32m+[m[32m  <component name="JsGulpfileManager">[m
+[32m+[m[32m    <detection-done>true</detection-done>[m
+[32m+[m[32m    <sorting>DEFINITION_ORDER</sorting>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ProjectFrameBounds">[m
+[32m+[m[32m    <option name="y" value="31" />[m
+[32m+[m[32m    <option name="width" value="2560" />[m
+[32m+[m[32m    <option name="height" value="1409" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ProjectView">[m
+[32m+[m[32m    <navigator currentView="ProjectPane" proportions="" version="1">[m
+[32m+[m[32m      <flattenPackages />[m
+[32m+[m[32m      <showMembers />[m
+[32m+[m[32m      <showModules />[m
+[32m+[m[32m      <showLibraryContents />[m
+[32m+[m[32m      <hideEmptyPackages />[m
+[32m+[m[32m      <abbreviatePackageNames />[m
+[32m+[m[32m      <autoscrollToSource />[m
+[32m+[m[32m      <autoscrollFromSource />[m
+[32m+[m[32m      <sortByType />[m
+[32m+[m[32m      <manualOrder />[m
+[32m+[m[32m      <foldersAlwaysOnTop value="true" />[m
+[32m+[m[32m    </navigator>[m
+[32m+[m[32m    <panes>[m
+[32m+[m[32m      <pane id="PackagesPane" />[m
+[32m+[m[32m      <pane id="Scope" />[m
+[32m+[m[32m      <pane id="ProjectPane">[m
+[32m+[m[32m        <subPane>[m
+[32m+[m[32m          <PATH>[m
+[32m+[m[32m            <PATH_ELEMENT>[m
+[32m+[m[32m              <option name="myItemId" value="TeamTest" />[m
+[32m+[m[32m              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[32m+[m[32m            </PATH_ELEMENT>[m
+[32m+[m[32m            <PATH_ELEMENT>[m
+[32m+[m[32m              <option name="myItemId" value="TeamTest" />[m
+[32m+[m[32m              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[32m+[m[32m            </PATH_ELEMENT>[m
+[32m+[m[32m          </PATH>[m
+[32m+[m[32m          <PATH>[m
+[32m+[m[32m            <PATH_ELEMENT>[m
+[32m+[m[32m              <option name="myItemId" value="TeamTest" />[m
+[32m+[m[32m              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[32m+[m[32m            </PATH_ELEMENT>[m
+[32m+[m[32m            <PATH_ELEMENT>[m
+[32m+[m[32m              <option name="myItemId" value="TeamTest" />[m
+[32m+[m[32m              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[32m+[m[32m            </PATH_ELEMENT>[m
+[32m+[m[32m            <PATH_ELEMENT>[m
+[32m+[m[32m              <option name="myItemId" value="src" />[m
+[32m+[m[32m              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[32m+[m[32m            </PATH_ELEMENT>[m
+[32m+[m[32m          </PATH>[m
+[32m+[m[32m        </subPane>[m
+[32m+[m[32m      </pane>[m
+[32m+[m[32m      <pane id="Scratches" />[m
+[32m+[m[32m    </panes>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="PropertiesComponent">[m
+[32m+[m[32m    <property name="WebServerToolWindowFactoryState" value="false" />[m
+[32m+[m[32m    <property name="aspect.path.notification.shown" value="true" />[m
+[32m+[m[32m    <property name="project.structure.last.edited" value="Modules" />[m
+[32m+[m[32m    <property name="project.structure.proportion" value="0.0" />[m
+[32m+[m[32m    <property name="project.structure.side.proportion" value="0.0" />[m
+[32m+[m[32m    <property name="js.eslint.eslintPackage" value="" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="RunManager" selected="Application.GUI">[m
+[32m+[m[32m    <configuration default="false" name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" value="GUI" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="ENABLE_SWING_INSPECTOR" value="false" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <module name="TeamTest" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <predefined_log_file id="idea.log" enabled="true" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="DEPLOY" value="true" />[m
+[32m+[m[32m      <option name="ARTIFACT_NAME" value="" />[m
+[32m+[m[32m      <option name="PM_INSTALL_OPTIONS" value="" />[m
+[32m+[m[32m      <option name="ACTIVITY_EXTRA_FLAGS" value="" />[m
+[32m+[m[32m      <option name="MODE" value="default_activity" />[m
+[32m+[m[32m      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />[m
+[32m+[m[32m      <option name="PREFERRED_AVD" value="" />[m
+[32m+[m[32m      <option name="CLEAR_LOGCAT" value="false" />[m
+[32m+[m[32m      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />[m
+[32m+[m[32m      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />[m
+[32m+[m[32m      <option name="FORCE_STOP_RUNNING_APP" value="true" />[m
+[32m+[m[32m      <option name="DEBUGGER_TYPE" value="Java" />[m
+[32m+[m[32m      <option name="USE_LAST_SELECTED_DEVICE" value="false" />[m
+[32m+[m[32m      <option name="PREFERRED_AVD" value="" />[m
+[32m+[m[32m      <Java />[m
+[32m+[m[32m      <Profilers>[m
+[32m+[m[32m        <option name="ENABLE_ADVANCED_PROFILING" value="true" />[m
+[32m+[m[32m        <option name="GAPID_ENABLED" value="false" />[m
+[32m+[m[32m        <option name="GAPID_DISABLE_PCS" value="false" />[m
+[32m+[m[32m        <option name="SUPPORT_LIB_ENABLED" value="true" />[m
+[32m+[m[32m        <option name="INSTRUMENTATION_ENABLED" value="true" />[m
+[32m+[m[32m      </Profilers>[m
+[32m+[m[32m      <option name="DEEP_LINK" value="" />[m
+[32m+[m[32m      <option name="ACTIVITY_CLASS" value="" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="TESTING_TYPE" value="0" />[m
+[32m+[m[32m      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />[m
+[32m+[m[32m      <option name="METHOD_NAME" value="" />[m
+[32m+[m[32m      <option name="CLASS_NAME" value="" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" value="" />[m
+[32m+[m[32m      <option name="EXTRA_OPTIONS" value="" />[m
+[32m+[m[32m      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />[m
+[32m+[m[32m      <option name="PREFERRED_AVD" value="" />[m
+[32m+[m[32m      <option name="CLEAR_LOGCAT" value="false" />[m
+[32m+[m[32m      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />[m
+[32m+[m[32m      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />[m
+[32m+[m[32m      <option name="FORCE_STOP_RUNNING_APP" value="true" />[m
+[32m+[m[32m      <option name="DEBUGGER_TYPE" value="Java" />[m
+[32m+[m[32m      <option name="USE_LAST_SELECTED_DEVICE" value="false" />[m
+[32m+[m[32m      <option name="PREFERRED_AVD" value="" />[m
+[32m+[m[32m      <Java />[m
+[32m+[m[32m      <Profilers>[m
+[32m+[m[32m        <option name="ENABLE_ADVANCED_PROFILING" value="true" />[m
+[32m+[m[32m        <option name="GAPID_ENABLED" value="false" />[m
+[32m+[m[32m        <option name="GAPID_DISABLE_PCS" value="false" />[m
+[32m+[m[32m        <option name="SUPPORT_LIB_ENABLED" value="true" />[m
+[32m+[m[32m        <option name="INSTRUMENTATION_ENABLED" value="true" />[m
+[32m+[m[32m      </Profilers>[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="Applet" factoryName="Applet">[m
+[32m+[m[32m      <option name="HTML_USED" value="false" />[m
+[32m+[m[32m      <option name="WIDTH" value="400" />[m
+[32m+[m[32m      <option name="HEIGHT" value="300" />[m
+[32m+[m[32m      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />[m
+[32m+[m[32m      <module />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="Application" factoryName="Application">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="ENABLE_SWING_INSPECTOR" value="false" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="arquillianRunConfiguration">[m
+[32m+[m[32m        <value>[m
+[32m+[m[32m          <option name="containerStateName" value="" />[m
+[32m+[m[32m        </value>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="METHOD_NAME" />[m
+[32m+[m[32m      <option name="TEST_OBJECT" value="class" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <option name="TEST_SEARCH_SCOPE">[m
+[32m+[m[32m        <value defaultName="singleModule" />[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <patterns />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="ArquillianTestNG" factoryName="">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="arquillianRunConfiguration">[m
+[32m+[m[32m        <value>[m
+[32m+[m[32m          <option name="containerStateName" value="" />[m
+[32m+[m[32m        </value>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="SUITE_NAME" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="METHOD_NAME" />[m
+[32m+[m[32m      <option name="GROUP_NAME" />[m
+[32m+[m[32m      <option name="TEST_OBJECT" value="CLASS" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" />[m
+[32m+[m[32m      <option name="OUTPUT_DIRECTORY" />[m
+[32m+[m[32m      <option name="ANNOTATION_TYPE" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <option name="TEST_SEARCH_SCOPE">[m
+[32m+[m[32m        <value defaultName="singleModule" />[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="USE_DEFAULT_REPORTERS" value="false" />[m
+[32m+[m[32m      <option name="PROPERTIES_FILE" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <properties />[m
+[32m+[m[32m      <listeners />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="myFilePath" />[m
+[32m+[m[32m      <option name="GLUE" />[m
+[32m+[m[32m      <option name="myNameFilter" />[m
+[32m+[m[32m      <option name="myGeneratedName" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="ENABLE_SWING_INSPECTOR" value="false" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">[m
+[32m+[m[32m      <option name="BCName" value="" />[m
+[32m+[m[32m      <option name="IOSSimulatorSdkPath" value="" />[m
+[32m+[m[32m      <option name="adlOptions" value="" />[m
+[32m+[m[32m      <option name="airProgramParameters" value="" />[m
+[32m+[m[32m      <option name="appDescriptorForEmulator" value="Android" />[m
+[32m+[m[32m      <option name="debugTransport" value="USB" />[m
+[32m+[m[32m      <option name="debuggerSdkRaw" value="BC SDK" />[m
+[32m+[m[32m      <option name="emulator" value="NexusOne" />[m
+[32m+[m[32m      <option name="emulatorAdlOptions" value="" />[m
+[32m+[m[32m      <option name="fastPackaging" value="true" />[m
+[32m+[m[32m      <option name="fullScreenHeight" value="0" />[m
+[32m+[m[32m      <option name="fullScreenWidth" value="0" />[m
+[32m+[m[32m      <option name="launchUrl" value="false" />[m
+[32m+[m[32m      <option name="launcherParameters">[m
+[32m+[m[32m        <LauncherParameters>[m
+[32m+[m[32m          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />[m
+[32m+[m[32m          <option name="launcherType" value="OSDefault" />[m
+[32m+[m[32m          <option name="newPlayerInstance" value="false" />[m
+[32m+[m[32m          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />[m
+[32m+[m[32m        </LauncherParameters>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="mobileRunTarget" value="Emulator" />[m
+[32m+[m[32m      <option name="moduleName" value="" />[m
+[32m+[m[32m      <option name="overriddenMainClass" value="" />[m
+[32m+[m[32m      <option name="overriddenOutputFileName" value="" />[m
+[32m+[m[32m      <option name="overrideMainClass" value="false" />[m
+[32m+[m[32m      <option name="runTrusted" value="true" />[m
+[32m+[m[32m      <option name="screenDpi" value="0" />[m
+[32m+[m[32m      <option name="screenHeight" value="0" />[m
+[32m+[m[32m      <option name="screenWidth" value="0" />[m
+[32m+[m[32m      <option name="url" value="http://" />[m
+[32m+[m[32m      <option name="usbDebugPort" value="7936" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">[m
+[32m+[m[32m      <option name="BCName" value="" />[m
+[32m+[m[32m      <option name="launcherParameters">[m
+[32m+[m[32m        <LauncherParameters>[m
+[32m+[m[32m          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />[m
+[32m+[m[32m          <option name="launcherType" value="OSDefault" />[m
+[32m+[m[32m          <option name="newPlayerInstance" value="false" />[m
+[32m+[m[32m          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />[m
+[32m+[m[32m        </LauncherParameters>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="moduleName" value="" />[m
+[32m+[m[32m      <option name="trusted" value="true" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">[m
+[32m+[m[32m      <ExternalSystemSettings>[m
+[32m+[m[32m        <option name="executionName" />[m
+[32m+[m[32m        <option name="externalProjectPath" />[m
+[32m+[m[32m        <option name="externalSystemIdString" value="GRADLE" />[m
+[32m+[m[32m        <option name="scriptParameters" />[m
+[32m+[m[32m        <option name="taskDescriptions">[m
+[32m+[m[32m          <list />[m
+[32m+[m[32m        </option>[m
+[32m+[m[32m        <option name="taskNames">[m
+[32m+[m[32m          <list />[m
+[32m+[m[32m        </option>[m
+[32m+[m[32m        <option name="vmOptions" />[m
+[32m+[m[32m      </ExternalSystemSettings>[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">[m
+[32m+[m[32m      <setting name="vmparams" value="" />[m
+[32m+[m[32m      <setting name="cmdLine" value="run-app" />[m
+[32m+[m[32m      <setting name="passParentEnv" value="true" />[m
+[32m+[m[32m      <setting name="launchBrowser" value="true" />[m
+[32m+[m[32m      <setting name="launchBrowserUrl" value="" />[m
+[32m+[m[32m      <setting name="depsClasspath" value="false" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="JUnit" factoryName="JUnit">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="METHOD_NAME" />[m
+[32m+[m[32m      <option name="TEST_OBJECT" value="class" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" value="-ea" />[m
+[32m+[m[32m      <option name="PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <option name="TEST_SEARCH_SCOPE">[m
+[32m+[m[32m        <value defaultName="singleModule" />[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <patterns />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="JarApplication" factoryName="JAR Application">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="SCRATCH_FILE_ID" value="0" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="ENABLE_SWING_INSPECTOR" value="false" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">[m
+[32m+[m[32m      <config-file value="" />[m
+[32m+[m[32m      <node-interpreter value="project" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" />[m
+[32m+[m[32m      <option name="PROGRAM_PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <module name="TeamTest" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <option name="filePath" />[m
+[32m+[m[32m      <option name="vmParameters" />[m
+[32m+[m[32m      <option name="alternativeJrePath" />[m
+[32m+[m[32m      <option name="programParameters" />[m
+[32m+[m[32m      <option name="passParentEnvs" value="true" />[m
+[32m+[m[32m      <option name="workingDirectory" />[m
+[32m+[m[32m      <option name="isAlternativeJrePathEnabled" value="false" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="Remote" factoryName="Remote">[m
+[32m+[m[32m      <option name="USE_SOCKET_TRANSPORT" value="true" />[m
+[32m+[m[32m      <option name="SERVER_MODE" value="false" />[m
+[32m+[m[32m      <option name="SHMEM_ADDRESS" value="javadebug" />[m
+[32m+[m[32m      <option name="HOST" value="localhost" />[m
+[32m+[m[32m      <option name="PORT" value="5005" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="TestNG" factoryName="TestNG">[m
+[32m+[m[32m      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />[m
+[32m+[m[32m      <option name="ALTERNATIVE_JRE_PATH" />[m
+[32m+[m[32m      <option name="SUITE_NAME" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" />[m
+[32m+[m[32m      <option name="MAIN_CLASS_NAME" />[m
+[32m+[m[32m      <option name="METHOD_NAME" />[m
+[32m+[m[32m      <option name="GROUP_NAME" />[m
+[32m+[m[32m      <option name="TEST_OBJECT" value="CLASS" />[m
+[32m+[m[32m      <option name="VM_PARAMETERS" value="-ea" />[m
+[32m+[m[32m      <option name="PARAMETERS" />[m
+[32m+[m[32m      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />[m
+[32m+[m[32m      <option name="OUTPUT_DIRECTORY" />[m
+[32m+[m[32m      <option name="ANNOTATION_TYPE" />[m
+[32m+[m[32m      <option name="ENV_VARIABLES" />[m
+[32m+[m[32m      <option name="PASS_PARENT_ENVS" value="true" />[m
+[32m+[m[32m      <option name="TEST_SEARCH_SCOPE">[m
+[32m+[m[32m        <value defaultName="singleModule" />[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m      <option name="USE_DEFAULT_REPORTERS" value="false" />[m
+[32m+[m[32m      <option name="PROPERTIES_FILE" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <properties />[m
+[32m+[m[32m      <listeners />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">[m
+[32m+[m[32m      <node-interpreter>project</node-interpreter>[m
+[32m+[m[32m      <node-options />[m
+[32m+[m[32m      <gulpfile />[m
+[32m+[m[32m      <tasks />[m
+[32m+[m[32m      <arguments />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="js.build_tools.npm" factoryName="npm">[m
+[32m+[m[32m      <command value="run" />[m
+[32m+[m[32m      <scripts />[m
+[32m+[m[32m      <node-interpreter value="project" />[m
+[32m+[m[32m      <envs />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+[32m+[m[32m    <list size="1">[m
+[32m+[m[32m      <item index="0" class="java.lang.String" itemvalue="Application.GUI" />[m
+[32m+[m[32m    </list>[m
+[32m+[m[32m    <recent_temporary>[m
+[32m+[m[32m      <list size="1">[m
+[32m+[m[32m        <item index="0" class="java.lang.String" itemvalue="Application.GUI" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </recent_temporary>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ShelveChangesManager" show_recycled="false">[m
+[32m+[m[32m    <option name="remove_strategy" value="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="TaskManager">[m
+[32m+[m[32m    <task active="true" id="Default" summary="Default task">[m
+[32m+[m[32m      <changelist id="58828481-f545-4a0a-951f-43cfd385d8dd" name="Default" comment="" />[m
+[32m+[m[32m      <created>1485786418323</created>[m
+[32m+[m[32m      <option name="number" value="Default" />[m
+[32m+[m[32m      <option name="presentableId" value="Default" />[m
+[32m+[m[32m      <updated>1485786418323</updated>[m
+[32m+[m[32m      <workItem from="1485786421693" duration="666000" />[m
+[32m+[m[32m      <workItem from="1485791917328" duration="611000" />[m
+[32m+[m[32m      <workItem from="1485966057985" duration="831000" />[m
+[32m+[m[32m      <workItem from="1485966953739" duration="1923000" />[m
+[32m+[m[32m      <workItem from="1485981147450" duration="5010000" />[m
+[32m+[m[32m      <workItem from="1486138341680" duration="1436000" />[m
+[32m+[m[32m      <workItem from="1486150559548" duration="2037000" />[m
+[32m+[m[32m      <workItem from="1486226349488" duration="1436000" />[m
+[32m+[m[32m      <workItem from="1486319316436" duration="4952000" />[m
+[32m+[m[32m      <workItem from="1486396819241" duration="1478000" />[m
+[32m+[m[32m      <workItem from="1486398605245" duration="64000" />[m
+[32m+[m[32m    </task>[m
+[32m+[m[32m    <servers />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="TimeTrackingManager">[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="20444000" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ToolWindowManager">[m
+[32m+[m[32m    <frame x="0" y="31" width="2560" height="1409" extended-state="6" />[m
+[32m+[m[32m    <editor active="true" />[m
+[32m+[m[32m    <layout>[m
+[32m+[m[32m      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16192937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11210938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+[32m+[m[32m      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />[m
+[32m+[m[32m      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m    </layout>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="TypeScriptGeneratedFilesManager">[m
+[32m+[m[32m    <option name="processedProjectFiles" value="true" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="VcsContentAnnotationSettings">[m
+[32m+[m[32m    <option name="myLimit" value="2678400000" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="XDebuggerManager">[m
+[32m+[m[32m    <breakpoint-manager />[m
+[32m+[m[32m    <watches-manager />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="antWorkspaceConfiguration">[m
+[32m+[m[32m    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />[m
+[32m+[m[32m    <option name="FILTER_TARGETS" value="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="editorHistoryManager">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="432">[m
+[32m+[m[32m          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="180">[m
+[32m+[m[32m          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="1836">[m
+[32m+[m[32m          <caret line="64" column="82" lean-forward="false" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="432">[m
+[32m+[m[32m          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="756">[m
+[32m+[m[32m          <caret line="24" column="118" lean-forward="false" selection-start-line="24" selection-start-column="118" selection-end-line="24" selection-end-column="118" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="468">[m
+[32m+[m[32m          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="504">[m
+[32m+[m[32m          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="468">[m
+[32m+[m[32m          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="252">[m
+[32m+[m[32m          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="576">[m
+[32m+[m[32m          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="576">[m
+[32m+[m[32m          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="396">[m
+[32m+[m[32m          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="252">[m
+[32m+[m[32m          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridModel.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="432">[m
+[32m+[m[32m          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GridButton.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="216">[m
+[32m+[m[32m          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/GUI.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="324">[m
+[32m+[m[32m          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="masterDetails">[m
+[32m+[m[32m    <states>[m
+[32m+[m[32m      <state key="ArtifactsStructureConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <artifact-editor />[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m      <state key="FacetStructureConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <last-edited>No facets are configured</last-edited>[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m      <state key="GlobalLibrariesConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m      <state key="JdkListConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <last-edited>1.8</last-edited>[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m      <state key="ModuleStructureConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <last-edited>LogicPuzzle</last-edited>[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m                <option value="0.6" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m      <state key="ProjectLibrariesConfigurable.UI">[m
+[32m+[m[32m        <settings>[m
+[32m+[m[32m          <splitter-proportions>[m
+[32m+[m[32m            <option name="proportions">[m
+[32m+[m[32m              <list>[m
+[32m+[m[32m                <option value="0.2" />[m
+[32m+[m[32m              </list>[m
+[32m+[m[32m            </option>[m
+[32m+[m[32m          </splitter-proportions>[m
+[32m+[m[32m        </settings>[m
+[32m+[m[32m      </state>[m
+[32m+[m[32m    </states>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/LogicPuzzle.iml b/LogicPuzzle.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c90834f[m
+[1m--- /dev/null[m
+[1m+++ b/LogicPuzzle.iml[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module type="JAVA_MODULE" version="4">[m
+[32m+[m[32m  <component name="NewModuleRootManager" inherit-compiler-output="true">[m
+[32m+[m[32m    <exclude-output />[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$">[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />[m
+[32m+[m[32m    </content>[m
+[32m+[m[32m    <orderEntry type="inheritedJdk" />[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/out/production/TeamTest/GUI.class b/out/production/TeamTest/GUI.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dd0b872[m
+Binary files /dev/null and b/out/production/TeamTest/GUI.class differ
+[1mdiff --git a/out/production/TeamTest/GridButton.class b/out/production/TeamTest/GridButton.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5c17f1[m
+Binary files /dev/null and b/out/production/TeamTest/GridButton.class differ
+[1mdiff --git a/out/production/TeamTest/GridModel.class b/out/production/TeamTest/GridModel.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..baaa7c1[m
+Binary files /dev/null and b/out/production/TeamTest/GridModel.class differ
+[1mdiff --git a/out/production/TeamTest/o.png b/out/production/TeamTest/o.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..70a82a0[m
+Binary files /dev/null and b/out/production/TeamTest/o.png differ
+[1mdiff --git a/out/production/TeamTest/style.css b/out/production/TeamTest/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..985aaf1[m
+[1m--- /dev/null[m
+[1m+++ b/out/production/TeamTest/style.css[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m.GridButton:hover {[m
+[32m+[m[32m  background-color: black;[m
+[32m+[m[32m}[m
+[32m+[m[32m.GridButton {[m
+[32m+[m[32m  min-height: 600px;[m
+[32m+[m[32m}[m
+[1mdiff --git a/out/production/TeamTest/x.png b/out/production/TeamTest/x.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d8a51bc[m
+Binary files /dev/null and b/out/production/TeamTest/x.png differ
+[1mdiff --git a/src/GUI.java b/src/GUI.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..67e6517[m
+[1m--- /dev/null[m
+[1m+++ b/src/GUI.java[m
+[36m@@ -0,0 +1,73 @@[m
+[32m+[m[32mimport javafx.application.Application;[m
+[32m+[m[32mimport javafx.geometry.Insets;[m
+[32m+[m[32mimport javafx.scene.Scene;[m
+[32m+[m[32mimport javafx.scene.effect.Bloom;[m
+[32m+[m[32mimport javafx.scene.layout.GridPane;[m
+[32m+[m[32mimport javafx.scene.layout.HBox;[m
+[32m+[m[32mimport javafx.stage.Stage;[m
+[32m+[m
+[32m+[m
+[32m+[m[32mpublic class GUI extends Application {[m
+[32m+[m
+[32m+[m[32mprivate GridPane pane;[m
+[32m+[m[32mprivate boolean[] gridAnswers = {false, true, false, false,[m
+[32m+[m[32m                            true, false, false, false,[m
+[32m+[m[32m                            false, false, true, false,[m
+[32m+[m[32m                            false, false, false, false};[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public void start(Stage primaryStage) throws Exception {[m
+[32m+[m[32m        primaryStage.setTitle("GridPane Experiment");[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        GridModel gridPane1 = createGrid(gridAnswers);[m
+[32m+[m[32m        GridModel gridPane2 = createGrid(gridAnswers);[m
+[32m+[m
+[32m+[m[32m        HBox hBox = new HBox();[m
+[32m+[m
+[32m+[m[32m        hBox.setSpacing(0);[m
+[32m+[m[32m        hBox.setPadding(new Insets(5,5,5,5));[m
+[32m+[m[32m        hBox.getChildren().addAll(gridPane1,gridPane2);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        Scene scene = new Scene(hBox, 1000, 1000);[m
+[32m+[m[32m        pane = gridPane1;[m
+[32m+[m[32m        primaryStage.setScene(scene);[m
+[32m+[m[32m        primaryStage.show();[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public boolean checkCorrectAnswers(GridModel gridPane){[m
+[32m+[m[32m        int i = 0;[m
+[32m+[m[32m        while(i < 16) {[m
+[32m+[m[32m            if(((GridButton)pane.getChildren().get(i)).isMarkedCorrect() == gridPane.getGridAnswers()[i]){[m
+[32m+[m[32m                i++;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            return true;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public GridModel createGrid(boolean[] list){[m
+[32m+[m[32m        GridModel gridPane = new GridModel(list);[m
+[32m+[m[32m        for (int r = 0; r < 4; r++) {[m
+[32m+[m[32m            for (int c = 0; c < 4; c++) {[m
+[32m+[m[32m                GridButton button = new GridButton();[m
+[32m+[m[32m                button.setOnMouseEntered(event -> button.setEffect(new Bloom()));[m
+[32m+[m[32m                button.setOnMouseExited(event -> button.setEffect(null));[m
+[32m+[m[32m                button.setOnAction(event -> {[m
+[32m+[m[32m                    button.changeState();[m
+[32m+[m[32m                    this.checkCorrectAnswers(gridPane);[m
+[32m+[m[32m                });[m
+[32m+[m[32m                gridPane.add(button, c, r);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return gridPane;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m        Application.launch(args);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/GridButton.java b/src/GridButton.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ebdb53f[m
+[1m--- /dev/null[m
+[1m+++ b/src/GridButton.java[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32mimport javafx.scene.control.Button;[m
+[32m+[m[32mimport javafx.scene.layout.Background;[m
+[32m+[m
+[32m+[m[32mpublic class GridButton extends Button {[m
+[32m+[m
+[32m+[m[32m    private boolean marked = false;[m
+[32m+[m[32m    private boolean markedCorrect = false;[m
+[32m+[m[41m    [m
+[32m+[m[32m    public GridButton(){[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        setStyle("-fx-min-height: 75px; -fx-min-width: 75px;");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public boolean isMarkedCorrect() {[m
+[32m+[m[32m        return markedCorrect;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public void changeState(){[m
+[32m+[m[32m        if(marked){[m
+[32m+[m[32m            if(markedCorrect){[m
+[32m+[m[32m                markedCorrect = false;[m
+[32m+[m[32m                marked = false;[m
+[32m+[m[32m                this.setStyle("-fx-background-color: white;" +[m
+[32m+[m[32m                        "-fx-min-height: 75px; -fx-min-width: 75px;"+[m
+[32m+[m[32m                        "-fx-background-color: -fx-shadow-highlight-color," +[m
+[32m+[m[32m                        " -fx-outer-border, " +[m
+[32m+[m[32m                        "-fx-inner-border, -fx-body-color;");[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                markedCorrect= true;[m
+[32m+[m[32m                this.setStyle("-fx-background-image: url('/o.png');" +[m
+[32m+[m[32m                        "-fx-min-height: 75px; -fx-min-width: 75px;");[m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else {[m
+[32m+[m[32m            marked = true;[m
+[32m+[m[32m            this.setStyle("-fx-background-image: url('/x.png');" +[m
+[32m+[m[32m                    "-fx-min-height: 75px; -fx-min-width: 75px;");[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/GridModel.java b/src/GridModel.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7dc27e8[m
+[1m--- /dev/null[m
+[1m+++ b/src/GridModel.java[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32mimport javafx.scene.layout.GridPane;[m
+[32m+[m
+[32m+[m[32mpublic class GridModel extends GridPane{[m
+[32m+[m
+[32m+[m[32m    private GridPane pane;[m
+[32m+[m[32m    private boolean[] gridAnswers = {};[m
+[32m+[m
+[32m+[m[32m    public GridModel(boolean[] list){[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        gridAnswers = list;[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public boolean[] getGridAnswers() {[m
+[32m+[m[32m        return gridAnswers;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/o.png b/src/o.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..70a82a0[m
+Binary files /dev/null and b/src/o.png differ
+[1mdiff --git a/src/style.css b/src/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..985aaf1[m
+[1m--- /dev/null[m
+[1m+++ b/src/style.css[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m.GridButton:hover {[m
+[32m+[m[32m  background-color: black;[m
+[32m+[m[32m}[m
+[32m+[m[32m.GridButton {[m
+[32m+[m[32m  min-height: 600px;[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/x.png b/src/x.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d8a51bc[m
+Binary files /dev/null and b/src/x.png differ

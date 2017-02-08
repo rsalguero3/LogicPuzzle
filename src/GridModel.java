@@ -8,7 +8,7 @@ public class GridModel extends GridPane{
     public GridModel(boolean[] list){
         super();
         gridAnswers = list;
-
+        this.setStyle("-fx-border-color: black; -fx-border-style: solid");
     }
 
     public boolean[] getGridAnswers() {

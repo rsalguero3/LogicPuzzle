@@ -1,6 +1,7 @@
 import javafx.scene.control.Button;
 import javafx.scene.layout.Background;
 
+//Ricardo Salguero
 public class GridButton extends Button {
 
     private boolean marked = false;
@@ -15,6 +16,7 @@ public class GridButton extends Button {
         return markedCorrect;
     }
 
+    //Will change the state of button to either an X, O, or blank
     public void changeState(){
         if(marked){
             if(markedCorrect){
