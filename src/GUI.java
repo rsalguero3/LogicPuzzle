@@ -4,15 +4,12 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.SplitPane;
-import javafx.scene.control.TableView;
 import javafx.scene.effect.Bloom;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-import javax.swing.table.TableColumn;
 
-//Ricardo Salguero
+//Ricardo Salguero and Grant Osborn
 public class GUI extends Application {
 
 private GridPane pane;
@@ -24,20 +21,26 @@ private boolean[] gridAnswers = {false, true, false, false,
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("GridPane Experiment");
         
-        Button b= new Button("clear errors");
+        
+        
         Label label = new Label("hi");
 
         GridModel gridPane1 = createGrid(gridAnswers);
         GridModel gridPane2 = createGrid(gridAnswers);
         GridModel gridPane3 = createGrid(gridAnswers);
+        
+        //test button
+        Button b= new Button("clear errors");
+        Button reset= new Button("start over");
         b.setOnAction(e -> gridPane1.clearErrors());
+        reset.setOnAction(e -> gridPane1.startOver());
         
         HBox hBox = new HBox();
         HBox textBox = new HBox();
         VBox vBox = new VBox();
         textBox.setSpacing(0);
         textBox.setPadding(new Insets(5,5,5,5));
-        textBox.getChildren().addAll(label,b);
+        textBox.getChildren().addAll(label,b,reset);
 
         vBox.setSpacing(0);
         vBox.setPadding(new Insets (50,5,0,10));
@@ -80,19 +83,14 @@ private boolean[] gridAnswers = {false, true, false, false,
                 button.setOnMouseEntered(event -> button.setEffect(new Bloom()));
                 button.setOnMouseExited(event -> button.setEffect(null));
                 button.setOnAction(event -> {
-                    
                     if(gridPane.checkViolations(collum, row)){
                         button.changeState();
                         if(button.isMarkedCorrect()){
-                            gridPane.setRowToX(collum, row);
-                            gridPane.setCollumToX(collum, row);  
+                            gridPane.setRowAndColumnToX(collum,row);
+                        }else if(button.isClear()){
+                            gridPane.clearRowAndColumn(collum, row);
                         }
-                        else if(button.isClear()){
-                            gridPane.setRowToClear(row);
-                            gridPane.setCollumToClear(collum);
-                        
-                        }
-                    }
+                    }//end if violations
                     this.checkCorrectAnswers(gridPane);
                 });
                 gridPane.add(button, c, r);

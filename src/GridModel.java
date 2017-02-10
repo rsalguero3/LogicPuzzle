@@ -14,20 +14,28 @@ public class GridModel extends GridPane{
         this.setStyle("-fx-border-color: black; -fx-border-style: solid");
     }
     
+    public void startOver(){
+        for(int i=0;i<gridAnswers.length;i++){
+           GridButton button;
+           button = (GridButton) this.getChildren().get(i);
+           button.setClear();
+        }
+        
+    }
+    
     
     public void clearErrors(){
         for(int i=0;i<16;i++){
-           
            GridButton button;
            button = (GridButton) this.getChildren().get(i);
            
-           if(button.isMarkedCorrect()==true&&gridAnswers[i]==false){
+           if(button.isMarkedCorrect()&&gridAnswers[i]==false){
                button.setClear();
            }
            else if(button.isMarked()&&button.isMarkedCorrect()==false&&gridAnswers[i]==true){
                button.setClear();
            }
-           else if(button.isMarkedCorrect()==true&&gridAnswers[i]==true){
+           else if(button.isMarkedCorrect()&&gridAnswers[i]==true){
                button.setCircle();  
            }
         }
@@ -37,7 +45,13 @@ public class GridModel extends GridPane{
         return gridAnswers;
     }
     
-   public void setRowToX(int x, int y){
+    public void setRowAndColumnToX(int x, int y){
+        setRowToX(x,y);
+        setColumnToX(x,y);
+    }
+    
+    
+   private void setRowToX(int x, int y){
        int index=y*4; 
        int pos=x+index;
         for(int i=0;i<4;i++){
@@ -49,8 +63,7 @@ public class GridModel extends GridPane{
         }   
    }
    
-   public void setCollumToX(int x, int y){
-       int index=x;
+   private void setColumnToX(int x, int y){
        int pos=4*y+x;
        for(int i=0;i<4;i++){
            GridButton button;
@@ -62,31 +75,41 @@ public class GridModel extends GridPane{
        }   
    }
    
-    public void setCollumToClear(int x){
-       for(int i=0;i<4;i++){
+   public void clearRowAndColumn(int x, int y){
+        setColumnToClear(x);
+        setRowToClear(y);
+    }
+    
+   
+    private void setColumnToClear(int x){
+       for(int y=0;y<4;y++){
            GridButton button;
            button = (GridButton) this.getChildren().get(x);
-           button.setClear();
+           if(checkRow(x,y)){
+            button.setClear();
+           }
            x+=4;
        }   
    }
    
     
-    public void setRowToClear(int y){
+    private void setRowToClear(int y){
         int index=y*4; 
-        for(int i=0;i<4;i++){
+        for(int x=0;x<4;x++){
             GridButton button;
-            button = (GridButton) this.getChildren().get(index+i);
-             button.setClear();     
+            button = (GridButton) this.getChildren().get(index+x);
+            if(checkCollum(x,y)){
+             button.setClear();   
+            }
         }
     }
-    
+    //true when no violations
     public boolean checkViolations(int x, int y){
         return checkCollum(x,y)&&checkRow(x,y);
         
     }
-    
-    public  boolean checkCollum(int x , int y){
+    //return true if no o in collum other than at x, y
+    private  boolean checkCollum(int x , int y){
        int index=x;
        int pos=4*y+x;
        for(int i=0;i<4;i++){
@@ -101,14 +124,14 @@ public class GridModel extends GridPane{
         
     }
     
-    
-    public boolean checkRow(int x,int y){ 
+    //returns true if there is no o in that row other than at x,y
+    private boolean checkRow(int x,int y){ 
         int index=y*4; 
         int pos=x+index;
         for(int i=0;i<4;i++){
             GridButton button;
             button = (GridButton) this.getChildren().get(index+i);
-            if(button.isMarkedCorrect()==true&&index+i!=index+x){
+            if(button.isMarkedCorrect()==true&&index+i!=pos){
                 return false;
             }
         }    
