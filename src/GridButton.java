@@ -3,7 +3,7 @@ package logicpuzzle;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Background;
 
-//Ricardo Salguero
+//Ricardo Salguero and Grant Osborn
 public class GridButton extends Button {
 
     private boolean marked = false;  //true when x
