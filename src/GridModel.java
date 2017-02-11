@@ -1,5 +1,6 @@
 package logicpuzzle;
 
+import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
 public class GridModel extends GridPane{
@@ -14,6 +15,19 @@ public class GridModel extends GridPane{
         this.setStyle("-fx-border-color: black; -fx-border-style: solid");
     }
     
+    public boolean isClearAt(int x,int y){
+        GridButton button;
+        button = (GridButton) this.getChildren().get(y*4+x);
+        return button.isClear(); 
+    }
+    
+    public Button getButtonAt(int x, int y){
+        GridButton button;
+        button = (GridButton) this.getChildren().get(y*4+x);
+        return button;
+        
+    }
+    
     public void startOver(){
         for(int i=0;i<gridAnswers.length;i++){
            GridButton button;
@@ -23,22 +37,27 @@ public class GridModel extends GridPane{
         
     }
     
-    
-    public void clearErrors(){
-        for(int i=0;i<16;i++){
+    //return true if no errors
+    public boolean clearErrors(){
+        boolean result = true;
+        for(int i=0;i<gridAnswers.length;i++){
            GridButton button;
            button = (GridButton) this.getChildren().get(i);
            
+           
            if(button.isMarkedCorrect()&&gridAnswers[i]==false){
                button.setClear();
+               result=false;
            }
            else if(button.isMarked()&&button.isMarkedCorrect()==false&&gridAnswers[i]==true){
                button.setClear();
+               result=false;
            }
            else if(button.isMarkedCorrect()&&gridAnswers[i]==true){
                button.setCircle();  
            }
         }
+        return result;
     }
     
     public boolean[] getGridAnswers() {

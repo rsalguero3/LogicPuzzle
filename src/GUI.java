@@ -13,34 +13,59 @@ import javafx.stage.Stage;
 public class GUI extends Application {
 
 private GridPane pane;
-private boolean[] gridAnswers = {false, true, false, false,
-                                 true, false, false, false,
-                                 false, false, true, false,
-                                 false, false, false, true};
+private final boolean[] gridAnswers = {false, false, true, false,
+                                       false, true, false, false,
+                                       false, false, false, true,
+                                       true, false, false, false};
+
+private final boolean[] gridAnswersr = {true, false, false, false,
+                                        false, false, false, true,
+                                        false, true, false, false,
+                                        false, false, true, false};
+
+private final boolean[] gridAnswersb = {false, false, true, false,
+                                        false, false, false, true,
+                                        true, false, false, false,
+                                        false, true, false, false};
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("GridPane Experiment");
         
-        
-        
         Label label = new Label("hi");
 
         GridModel gridPane1 = createGrid(gridAnswers);
-        GridModel gridPane2 = createGrid(gridAnswers);
-        GridModel gridPane3 = createGrid(gridAnswers);
+        GridModel gridPane2 = createGrid(gridAnswersr);
+        GridModel gridPane3 = createGrid(gridAnswersb);
         
-        //test button
+        //test buttons
+        Button hint= new Button("hint");
         Button b= new Button("clear errors");
         Button reset= new Button("start over");
-        b.setOnAction(e -> gridPane1.clearErrors());
-        reset.setOnAction(e -> gridPane1.startOver());
+        b.setOnAction(e ->{
+            gridPane1.clearErrors();
+            gridPane2.clearErrors();
+            gridPane3.clearErrors();
+        });
+        
+        reset.setOnAction(e ->{
+            gridPane1.startOver();
+            gridPane2.startOver();
+            gridPane3.startOver();
+        });
+        
+        HintGen h = new HintGen();
+        hint.setOnAction(e->{
+           System.out.println(h.generate(gridPane1, gridPane2, gridPane3));
+        });
         
         HBox hBox = new HBox();
         HBox textBox = new HBox();
         VBox vBox = new VBox();
         textBox.setSpacing(0);
         textBox.setPadding(new Insets(5,5,5,5));
-        textBox.getChildren().addAll(label,b,reset);
+        textBox.getChildren().addAll(label,b,reset,hint);
 
         vBox.setSpacing(0);
         vBox.setPadding(new Insets (50,5,0,10));
@@ -92,7 +117,7 @@ private boolean[] gridAnswers = {false, true, false, false,
                         }
                     }//end if violations
                     this.checkCorrectAnswers(gridPane);
-                });
+            });
                 gridPane.add(button, c, r);
             }
         }
