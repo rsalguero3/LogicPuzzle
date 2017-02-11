@@ -1,5 +1,3 @@
-package logicpuzzle;
-
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
@@ -117,18 +115,18 @@ public class GridModel extends GridPane{
         for(int x=0;x<4;x++){
             GridButton button;
             button = (GridButton) this.getChildren().get(index+x);
-            if(checkCollum(x,y)){
+            if(checkColumn(x,y)){
              button.setClear();   
             }
         }
     }
     //true when no violations
     public boolean checkViolations(int x, int y){
-        return checkCollum(x,y)&&checkRow(x,y);
+        return checkColumn(x,y)&&checkRow(x,y);
         
     }
-    //return true if no o in collum other than at x, y
-    private  boolean checkCollum(int x , int y){
+    //return true if no o in column other than at x, y
+    private  boolean checkColumn(int x , int y){
        int index=x;
        int pos=4*y+x;
        for(int i=0;i<4;i++){
