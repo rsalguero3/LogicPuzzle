@@ -1,3 +1,4 @@
+package logicpuzzle;        
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -30,6 +31,8 @@ private final boolean[] gridAnswers3 = {false, false, true, false,
                                         false, false, false, true,
                                         true, false, false, false,
                                         false, true, false, false};
+
+
 private final String[] topRowText = {"diamond ring", "earring", "gold chain",
         "wristwatch", "Addison Beach", "Burr Woods", "Front Beach",
         "Heffen Lane"};
@@ -59,9 +62,9 @@ private final String Clues =
             label1.setStyle("-fx-rotate: 90deg");
 
 
-            GridModel gridPane1 = createGrid(gridAnswers2);
+            GridModel gridPane1 = createGrid(gridAnswers1);
             GridModel gridPane2 = createGrid(gridAnswers2);
-            GridModel gridPane3 = createGrid(gridAnswers2);
+            GridModel gridPane3 = createGrid(gridAnswers3);
 
         
             //create bottom buttons
@@ -86,6 +89,13 @@ private final String Clues =
             });
 
             GridPane mainPane = new GridPane();
+            
+            
+            GridPane buttonPane = new GridPane();
+            buttonPane.add(hint, 1, 1);
+            buttonPane.add(clearErr, 2, 1);
+            buttonPane.add(reset, 3, 1);
+
 
             //creates the text on top of the grid
             GridPane topText = createTopText(topRowText);
@@ -107,16 +117,14 @@ private final String Clues =
             mainPane.add(gridPane1, 1 ,1);
             mainPane.add(gridPane2, 2 ,1);
             mainPane.add(gridPane3, 1 ,2);
-            mainPane.add(hint, 3 ,3);
-            mainPane.add(clearErr, 4 ,3);
-            mainPane.add(reset, 5 ,3);
-
+            mainPane.add(buttonPane, 2 ,2);
+           
 
             Scene scene = new Scene(mainPane, 2000, 1000);
             //save the instance of GridModels to be accessed later to check answers
             this.pane1 = gridPane1;
-            this.pane2 = gridPane1;
-            this.pane3 = gridPane1;
+            this.pane2 = gridPane2;
+            this.pane3 = gridPane3;
             primaryStage.setScene(scene);
             primaryStage.show();
     }
@@ -153,39 +161,24 @@ private final String Clues =
 
         return sideText;
     }
+    
+    
+        
+        
+
 
     //Method will be called by one of the GridModels and will check if all 3 Grids are correct
     public boolean checkCorrectAnswers(){
-        int i = 0;
-        while(i < 16) {
-            if(((GridButton)pane1.getChildren().get(i)).isMarkedCorrect() == pane1.getGridAnswers()[i]){
-                i++;
-            }
-            else{
-                break;
-            }
-            if(((GridButton)pane2.getChildren().get(i)).isMarkedCorrect() == pane2.getGridAnswers()[i]){
-                i++;
-            }
-            else{
-                break;
-            }
-            if(((GridButton)pane3.getChildren().get(i)).isMarkedCorrect() == pane3.getGridAnswers()[i]){
-                i++;
-            }
-            else{
-                break;
-            }
-
+        if(pane1.check()&& pane2.check()&& pane3.check()){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("You Won!");
             alert.setHeaderText(null);
             alert.setContentText("I have a great message for you!");
-
             alert.showAndWait();
             return true;
         }
         return false;
+        
     }
 
     //Method will create 3 GridModels and add buttons with events
@@ -207,7 +200,7 @@ private final String Clues =
                             gridPane.clearRowAndColumn(column, row);
                         }
                     }//end if violations
-                    this.checkCorrectAnswers();
+                 this.checkCorrectAnswers();   
             });
                 gridPane.add(button, c, r);
             }

@@ -1,3 +1,6 @@
+package logicpuzzle;        
+
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
@@ -57,6 +60,26 @@ public class GridModel extends GridPane{
         }
         return result;
     }
+    
+    public boolean check(){
+        for(int i=0;i<gridAnswers.length;i++){
+           GridButton button;
+           button = (GridButton) this.getChildren().get(i);
+           
+           if(button.isClear()){
+               return false;
+           }
+           if(button.isMarkedCorrect()&&gridAnswers[i]==false){
+               return false;
+           }
+           else if(button.isMarked()&&button.isMarkedCorrect()==false&&gridAnswers[i]==true){
+               return false;
+           }  
+        }
+        return true;
+    }
+    
+    
     
     public boolean[] getGridAnswers() {
         return gridAnswers;
