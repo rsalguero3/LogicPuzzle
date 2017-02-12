@@ -17,15 +17,15 @@ public class GUI extends Application {
 private GridModel pane1;
 private GridModel pane2;
 private GridModel pane3;
-private final boolean[] gridAnswers1 = {false, false, true, false,
-                                       false, true, false, false,
+private final boolean[] gridAnswers1 = {true, false, false, false,
                                        false, false, false, true,
-                                       true, false, false, false};
+                                       false, false, true, false,
+                                       false, true, false, false};
 
-private final boolean[] gridAnswers2 = {true, false, false, false,
-                                        false, false, false, true,
+private final boolean[] gridAnswers2 = {false, false, true, false,
                                         false, true, false, false,
-                                        false, false, true, false};
+                                        true, false, false, false,
+                                        false, false, false, true};
 
 private final boolean[] gridAnswers3 = {false, false, true, false,
                                         false, false, false, true,
@@ -33,33 +33,24 @@ private final boolean[] gridAnswers3 = {false, false, true, false,
                                         false, true, false, false};
 
 
-private final String[] topRowText = {"diamond ring", "earring", "gold chain",
-        "wristwatch", "Addison Beach", "Burr Woods", "Front Beach",
-        "Heffen Lane"};
+private final String[] topRowText = {"Charles", "Paul", "Spencer", "Victor",
+        "Faith", "Hazel", "Mercedes", "Naomi"};
 
-private final String[] sideColText = {"$250", "$325", "$400", "$475", "Addison Beach",
-        "Burr Woods", "Front Beach", "Heffen Lane"};
+private final String[] sideColText = {"January", "February", "March", "April",
+        "Faith", "Hazel", "Mercedes", "Naomi"};
 
 private final String Clues =
         "                                                       Clues \n" +
-        "1. The wristwatch sold for 75 dollars less than the object found at Burr Woods.\n" +
-        "2. The piece found at Heffen Lane was either the earring or the diamond ring.\n" +
-        "3. The diamond ring sold for $325.\n" +
-        "4. The piece found at Heffen Lane sold for somewhat less than the piece found at Addison Beach.\n" +
-        "5. The item that sold for $325 was found at Addison Beach.";
+                "1. Faith's team will leave 2 months after Mercedes's team.\n" +
+                "2. Victor's team will be either Mercedes's team or the team leaving in February.\n" +
+                "3. Paul's team will include Naomi.\n" +
+                "4. Victor's team will leave sometime after Charles's expedition.";
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
             primaryStage.setTitle("Logic Puzzle");
 
-            Label label = new Label("hi");
-            Label label1 = new Label("jason");
-            Label label4 = new Label("jason");
-            Label label3 = new Label("jason");
-
-            label.setStyle("-fx-rotate: 90deg");
-            label1.setStyle("-fx-rotate: 90deg");
 
 
             GridModel gridPane1 = createGrid(gridAnswers1);
@@ -90,8 +81,9 @@ private final String Clues =
 
             GridPane mainPane = new GridPane();
             
-            
+            //create the buttons and align them in the bottom center
             GridPane buttonPane = new GridPane();
+            buttonPane.setStyle("-fx-alignment: bottom-center");
             buttonPane.add(hint, 1, 1);
             buttonPane.add(clearErr, 2, 1);
             buttonPane.add(reset, 3, 1);
@@ -118,7 +110,7 @@ private final String Clues =
             mainPane.add(gridPane2, 2 ,1);
             mainPane.add(gridPane3, 1 ,2);
             mainPane.add(buttonPane, 2 ,2);
-           
+
 
             Scene scene = new Scene(mainPane, 2000, 1000);
             //save the instance of GridModels to be accessed later to check answers
@@ -155,7 +147,8 @@ private final String Clues =
         //add Labels from the text array
         for (int i = 0; i < sideColText.length; i++) {
             Label label = new Label(sideColText[i]);
-            label.setStyle("-fx-font-weight: bold; -fx-min-width: 75px; -fx-min-height: 75px; -fx-alignment: center-right");
+            label.setStyle("-fx-font-weight: bold;" +
+                    "-fx-underline: true; -fx-min-width: 75px; -fx-min-height: 75px; -fx-alignment: center-right");
             sideText.add(label, 0, i);
         }
 
