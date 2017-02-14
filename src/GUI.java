@@ -1,10 +1,11 @@
-//package logicpuzzle;        
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.effect.Bloom;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
@@ -58,7 +59,11 @@ private final String Clues =
             GridModel gridPane2 = createGrid(gridAnswers2);
             GridModel gridPane3 = createGrid(gridAnswers3);
 
-        
+            //Text area for hints
+            TextArea textArea = new TextArea();
+            textArea.setEditable(false);
+            textArea.setStyle("-fx-background-color: transparent; -fx-max-height: 100px");
+
             //create bottom buttons
             Button hint = new Button("hint");
             Button clearErr = new Button("clear errors");
@@ -77,7 +82,7 @@ private final String Clues =
 
             HintGen h = new HintGen();
             hint.setOnAction(e->{
-               System.out.println(h.generate(gridPane1, gridPane2, gridPane3));
+               textArea.setText(h.generate(gridPane1, gridPane2, gridPane3));
             });
 
             GridPane mainPane = new GridPane();
@@ -111,7 +116,7 @@ private final String Clues =
             mainPane.add(gridPane2, 2 ,1);
             mainPane.add(gridPane3, 1 ,2);
             mainPane.add(buttonPane, 2 ,2);
-
+            mainPane.add(textArea, 3,2);
 
             Scene scene = new Scene(mainPane, 2000, 1000);
             //save the instance of GridModels to be accessed later to check answers
