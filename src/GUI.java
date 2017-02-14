@@ -17,35 +17,36 @@ public class GUI extends Application {
 private GridModel pane1;
 private GridModel pane2;
 private GridModel pane3;
-private final boolean[] gridAnswers1 = {true, false, false, false,
+private final boolean[] gridAnswers1 = {false, true, false, false,
+                                       true, false, false, false,
                                        false, false, false, true,
-                                       false, false, true, false,
-                                       false, true, false, false};
+                                       false, false, true, false};
 
-private final boolean[] gridAnswers2 = {false, false, true, false,
-                                        false, true, false, false,
+private final boolean[] gridAnswers2 = {false, false, false, true,
                                         true, false, false, false,
-                                        false, false, false, true};
+                                        false, false, true, false,
+                                        false, true, false, false};
 
-private final boolean[] gridAnswers3 = {false, false, true, false,
+private final boolean[] gridAnswers3 = {true, false, false, false,
+                                        false, false, true, false,
                                         false, false, false, true,
-                                        true, false, false, false,
                                         false, true, false, false};
 
 
-private final String[] topRowText = {"Charles", "Paul", "Spencer", "Victor",
-        "Faith", "Hazel", "Mercedes", "Naomi"};
+private final String[] topRowText = {"diamond ring", "earring", "gold chain",
+        "wristwatch", "Addison Beach", "Burr Woods", "Front Beach",
+        "Heffen Lane"};
 
-private final String[] sideColText = {"January", "February", "March", "April",
-        "Faith", "Hazel", "Mercedes", "Naomi"};
+private final String[] sideColText = {"$250", "$325", "$400", "$475", "Addison Beach",
+        "Burr Woods", "Front Beach", "Heffen Lane"};
 
 private final String Clues =
         "                                                       Clues \n" +
-                "1. Faith's team will leave 2 months after Mercedes's team.\n" +
-                "2. Victor's team will be either Mercedes's team or the team leaving in February.\n" +
-                "3. Paul's team will include Naomi.\n" +
-                "4. Victor's team will leave sometime after Charles's expedition.";
-
+                "1. The wristwatch sold for 75 dollars less than the object found at Burr Woods.\n" +
+                "2. The piece found at Heffen Lane was either the earring or the diamond ring.\n" +
+                "3. The diamond ring sold for $325.\n" +
+                "4. The piece found at Heffen Lane sold for somewhat less than the piece found at Addison Beach.\n" +
+                "5. The item that sold for $325 was found at Addison Beach.";
 
     @Override
     public void start(Stage primaryStage) throws Exception {

@@ -1,4 +1,3 @@
-package logicpuzzle;        
 
 import java.util.ArrayList;
 import javafx.scene.effect.Bloom;
